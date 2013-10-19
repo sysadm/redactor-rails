@@ -89,7 +89,7 @@
 
 			wym: false,
 			mobile: true,
-			cleanup: true,
+			cleanup: false,
 			tidyHtml: true,
 			pastePlainText: false,
 			removeEmptyTags: true,
@@ -828,7 +828,7 @@
 			// remove space
 			html = html.replace(/&#x200b;/gi, '');
 			html = html.replace(/&#8203;/gi, '');
-			html = html.replace(/&nbsp;/gi, ' ');
+			// html = html.replace(/&nbsp;/gi, ' ');
 
 			// link nofollow
 			if (this.opts.linkNofollow)
